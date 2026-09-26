@@ -1,21 +1,21 @@
 
 books = [
-    {"title": "Die Hard: Year One", "author": "Howard Chaykin", "genre": "Action", "lang": "English", "rating": "4.2/5"},
-    {"title": "The Terminal List", "author": "Jack Carr", "genre": "Action", "lang": "English", "rating": "4.7/5"},
-    {"title": "Without Remorse", "author": "Tom Clancy", "genre": "Action", "lang": "English", "rating": "4.6/5"},
-    {"title": "The Gray Man", "author": "Mark Greaney", "genre": "Action", "lang": "English", "rating": "4.5/5"},
-    {"title": "Ice Station", "author": "Matthew Reilly", "genre": "Action", "lang": "English", "rating": "4.4/5"},
+    {"title": "Die Hard: Year One", "author": "Howard Chaykin", "genre": "Action", "lang": "English", "rating": "4.2/5", "Description": "A graphic novel prequel to the iconic movie, detailing John McClane's early days as a rookie beat cop in New York City during the bicentennial summer of 1976."},
+    {"title": "The Terminal List", "author": "Jack Carr", "genre": "Action", "lang": "English", "rating": "4.7/5", "Description": "A high stakes military thriller following Navy SEAL James Reece as he seeks revenge against a high level government conspiracy after his entire team is ambushed and killed."},
+    {"title": "Without Remorse", "author": "Tom Clancy", "genre": "Action", "lang": "English", "rating": "4.6/5", "Description": "An origin story set during Vietnam War featuring John Clark(formerly John Kelly), detailing to CIA operative as he embarks on a personal mission of vengeance."},
+    {"title": "The Gray Man", "author": "Mark Greaney", "genre": "Action", "lang": "English", "rating": "4.5/5", "Description": "The first novel in the Court Gentry series, following an elite freelance assassin and former CIA operative who becomes the target of an international manhunt across Europe."},
+    {"title": "Ice Station", "author": "Matthew Reilly", "genre": "Action", "lang": "English", "rating": "4.4/5", "Description": "A fast paced action novel where shane 'Scarecrow' Schofield and a squad of US Marines fight for survival at a remote Antarctic research station against rival foreign forces."},
 
-    {"title": "Pahlawan Melayu", "author": "A. Rahman", "genre": "Action", "lang": "Bahasa", "rating": "4.6/5"},
-    {"title": "Darah & Maruah", "author": "Ahmad Izham", "genre": "Action", "lang": "Bahasa", "rating": "4.5/5"},
-    {"title": "Pendekar Kembara", "author": "Siti Nurhalim", "genre": "Action", "lang": "Bahasa", "rating": "4.3/5"},
-    {"title": "Sembilan Nyawa", "author": "Zulkifli Ahmad", "genre": "Action", "lang": "Bahasa", "rating": "4.7/5"},
-    {"title": "Operasi Ribut", "author": "M. Nizam", "genre": "Action", "lang": "Bahasa", "rating": "4.4/5"},
+    {"title": "Pahlawan Melayu", "author": "A. Rahman", "genre": "Action", "lang": "Bahasa", "rating": "4.6/5", "Description": "A Malay action/ historical fiction novel centered on the courage, traditional martial skills, and honor of heroic warrir fighting for his people and land."},
+    {"title": "Darah & Maruah", "author": "Ahmad Izham", "genre": "Action", "lang": "Bahasa", "rating": "4.5/5", "Description": "This story revolves around high stakes conflict, personal loyaty, and defending family and community dignity against dangerous adversaries."},
+    {"title": "Pendekar Kembara", "author": "Siti Nurhalim", "genre": "Action", "lang": "Bahasa", "rating": "4.3/5", "Description": "Translated as the Wandering Warrior, it follows a skilled martial artist traveling through different lands, facing off against corrupt forceswhile defending the innocent."},
+    {"title": "Sembilan Nyawa", "author": "Zulkifli Ahmad", "genre": "Action", "lang": "Bahasa", "rating": "4.7/5", "Description": "This story follews an elusive protagonist who repeatedly survives lethal situations and deadly operational missions."},
+    {"title": "Operasi Ribut", "author": "M. Nizam", "genre": "Action", "lang": "Bahasa", "rating": "4.4/5", "Description": "A military or law enforcement acttion thriller detailing a tactical unit's high risk mission to neutralize a severe security threat."},
 
-    {"title": "Veeran", "author": "M. Karunanidhi", "genre": "Action", "lang": "Tamil", "rating": "4.4/5"},
-    {"title": "Por Kalidasa", "author": "S. Murugan", "genre": "Action", "lang": "Tamil", "rating": "4.5/5"},
-    {"title": "Sura", "author": "K. Rajan", "genre": "Action", "lang": "Tamil", "rating": "4.2/5"},
-    {"title": "Kaban", "author": "T. Raman", "genre": "Action", "lang": "Tamil", "rating": "4.3/5"},
+    {"title": "Veeran", "author": "M. Karunanidhi", "genre": "Action", "lang": "Tamil", "rating": "4.4/5", "Description": "Meaning The Brave Warrior, this narrative showcases a heroic central character overcoming formidable opponents to protect his community."},
+    {"title": "Por Kalidasa", "author": "S. Murugan", "genre": "Action", "lang": "Tamil", "rating": "4.5/5", "Description":"Translated as War of Kalidasa, a action-packed story combining warrior drama and battle tactics in a struggle against tyrannical forces."},
+    {"title": "Sura", "author": "K. Rajan", "genre": "Action", "lang": "Tamil", "rating": "4.2/5", "Description": "Named Shark (a symbol of power and relentless grit), following a powerful protagonist who fights against organized crime or societal corruption."},
+    {"title": "Kaban", "author": "T. Raman", "genre": "Action", "lang": "Tamil", "rating": "4.3/5", "Description": "A high intensity action drama centered around a heroic figure tackling heavy adversity, crime, and high risk confrontations."},
 
     {"title": "Dragon Blade", "author": "Chen Long", "genre": "Action", "lang": "Mandarin", "rating": "4.5/5"},
     {"title": "Shadow Warrior", "author": "Zhang Wei", "genre": "Action", "lang": "Mandarin", "rating": "4.6/5"},
@@ -114,18 +114,11 @@ def display_banner():
     ● Logged in as: Student
     """
     print(banner)
+    
 
 def main():
-    display_banner()
-
     while True:
-        genres = {
-            "action": "Action", 
-            "thriller": "Thriller", 
-            "motivation": "Motivation", 
-            "romance": "Romance", 
-            "science fiction": "Science Fiction"
-        }
+        display_banner()
 
         print("\n")
         print("So, what genre are you looking for?")
@@ -143,13 +136,12 @@ def main():
             genre_choice = input("Select genre: ").strip().lower()
             
         selected_genre = genres[genre_choice]
+        print("1. Book recomendation")
+        print("2. View book details")
+        print("3. Exit")
 
-        languages = {
-            "english": "English",
-            "tamil": "Tamil",
-            "mandarin": "Mandarin",
-            "bahasa": "Bahasa"
-        }
+        choice = input("Enter your choice:")
+        if choice == "1":
 
         print("\n")
         print("In what language do you prefer?")
@@ -224,6 +216,116 @@ def main():
                 print("---------------------------------------------------")
                 print("\n")
                 break
+                while True:
+                    genres = {
+                        "action": "Action", 
+                        "thriller": "Thriller", 
+                        "motivation": "Motivation", 
+                        "romance": "Romance", 
+                        "science fiction": "Science Fiction"
+                    }
+
+                    print("\nSo, what are you looking for?")
+                    print("1. Action")
+                    print("2. Thriller")
+                    print("3. Motivation")
+                    print("4. Romance")
+                    print("5. Science Fiction")
+                    
+                    genre_choice = input("Select genre: ").strip().lower()
+                    while genre_choice not in genres:
+                        print("\n")
+                        print("Sorryy, invalid genre! Please type the full genre name")
+                        print("\n")
+                        genre_choice = input("Select genre: ").strip().lower()
+                        
+                    selected_genre = genres[genre_choice]
+
+                    languages = {
+                        "english": "English",
+                        "tamil": "Tamil",
+                        "mandarin": "Mandarin",
+                        "bahasa": "Bahasa"
+                    }
+
+                    print("\nIn what language do you prefer?")
+                    print("1. English")
+                    print("2. Tamil")
+                    print("3. Mandarin")
+                    print("4. Bahasa")
+                    
+                    lang_choice = input("Select language: ").strip().lower()
+                    while lang_choice not in languages:
+                        print("\n")
+                        print("Sorryy, invalid language! Please type the full language name")
+                        print("\n")
+                        lang_choice = input("Select language: ").strip().lower()
+                        
+                    selected_lang = languages[lang_choice]
+
+                    print("\n")
+                    print(f"Here are some {selected_genre.upper()} books in {selected_lang.upper()}:")
+                    print("-------------------------------------------------------------")
+
+                    count = 1
+                    found = False
+                    for book in books:
+                        if book["genre"] == selected_genre and book["lang"] == selected_lang:
+                            print(f"{count}. Title  : {book['title']}")
+                            print(f"   Author : {book['author']}")
+                            print(f"   Rating : {book['rating']}")
+                            print("-------------------------------------------------------------")
+                            count += 1
+                            found = True
+                            
+                    if not found:
+                        print("\n")
+                        print("Oh nooo!! sorry no books found for this combination.")
+
+                    print("\n")
+                    ans = input("Okay, is this what you're looking for? (yes/no): ").strip().lower()
+                    while ans not in ["yes", "y", "no", "n"]:
+                        print("\n")
+                        print("Sorryy, invalid response! Please type 'yes' or 'no'")
+                        print("\n")
+                        ans = input("Okay, is this what you're looking for? (yes/no): ").strip().lower()
+
+                    if ans in ["yes", "y"]:
+                        print("\n")
+                        print("---------------------------------------------------")
+                        print("Thank youuu for choosing Kobo! Enjoy your reading")
+                        print("---------------------------------------------------")
+                        print("\n")
+                        break
+
+        elif choice == "2":
+            print("\n==================================")
+            print(       "List of Book Available       ")
+            print("==================================\n")
+            for index, book in enumerate (books, start=1):
+                print(f"{index}. {book['title']}")
+
+            book_choice = input("Enter the book number to view the details:")
+            if book_choice.isdigit():
+                selected_no = int(book_choice) - 1
+
+                if 0 <= selected_no < len(books):
+                    selected_book = books[selected_no]
+
+                    print("\n====================================")
+                    print(f"Title   :{selected_book['title']}")
+                    print(f"Author  :{selected_book['author']}")
+                    print("====================================\n")
+                    input("\nPress Enter to return to the main menu...")
+                else:
+                    print("Invalid book number selection.")
+                    input("\nPress Enter to return to the main menu...")
+
+        elif choice == "3":
+            print("Thank You for choosing Kobo!!!")
+            break
+            
+            
 
 if __name__ == "__main__":
     main()
