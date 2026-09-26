@@ -1,3 +1,4 @@
+
 books = [
     {"title": "Die Hard: Year One", "author": "Howard Chaykin", "genre": "Action", "lang": "English", "rating": "4.2/5"},
     {"title": "The Terminal List", "author": "Jack Carr", "genre": "Action", "lang": "English", "rating": "4.7/5"},
@@ -13,15 +14,12 @@ books = [
 
     {"title": "Veeran", "author": "M. Karunanidhi", "genre": "Action", "lang": "Tamil", "rating": "4.4/5"},
     {"title": "Por Kalidasa", "author": "S. Murugan", "genre": "Action", "lang": "Tamil", "rating": "4.5/5"},
-    {"title": "Velpari", "author": "Su. Venkatesan", "genre": "Action", "lang": "Tamil", "rating": "4.9/5"},
     {"title": "Sura", "author": "K. Rajan", "genre": "Action", "lang": "Tamil", "rating": "4.2/5"},
     {"title": "Kaban", "author": "T. Raman", "genre": "Action", "lang": "Tamil", "rating": "4.3/5"},
 
     {"title": "Dragon Blade", "author": "Chen Long", "genre": "Action", "lang": "Mandarin", "rating": "4.5/5"},
     {"title": "Shadow Warrior", "author": "Zhang Wei", "genre": "Action", "lang": "Mandarin", "rating": "4.6/5"},
     {"title": "Wuxia Legend", "author": "Jin Yong", "genre": "Action", "lang": "Mandarin", "rating": "4.9/5"},
-    {"title": "Iron Fist", "author": "Liu Ming", "genre": "Action", "lang": "Mandarin", "rating": "4.3/5"},
-    {"title": "Blade of Destiny", "author": "Wang Feng", "genre": "Action", "lang": "Mandarin", "rating": "4.4/5"},
 
     {"title": "The Silent Patient", "author": "Alex Michaelides", "genre": "Thriller", "lang": "English", "rating": "4.5/5"},
     {"title": "Gone Girl", "author": "Gillian Flynn", "genre": "Thriller", "lang": "English", "rating": "4.8/5"},
@@ -37,15 +35,11 @@ books = [
 
     {"title": "Vettai", "author": "S. Ramakrishnan", "genre": "Thriller", "lang": "Tamil", "rating": "4.7/5"},
     {"title": "Marmadesam", "author": "Indra Soundar Rajan", "genre": "Thriller", "lang": "Tamil", "rating": "4.8/5"},
-    {"title": "Nizhal", "author": "Balakumaran", "genre": "Thriller", "lang": "Tamil", "rating": "4.4/5"},
-    {"title": "Irul", "author": "Charu Nivedita", "genre": "Thriller", "lang": "Tamil", "rating": "4.3/5"},
-    {"title": "Rahasya", "author": "Pattukkottai Prabakar", "genre": "Thriller", "lang": "Tamil", "rating": "4.6/5"},
-
+   
     {"title": "Midnight Hunt", "author": "Zhang Wei", "genre": "Thriller", "lang": "Mandarin", "rating": "4.6/5"},
     {"title": "Bad Kids", "author": "Zijin Chen", "genre": "Thriller", "lang": "Mandarin", "rating": "4.8/5"},
     {"title": "The Long Night", "author": "Chen Zijin", "genre": "Thriller", "lang": "Mandarin", "rating": "4.7/5"},
     {"title": "Silent Shadow", "author": "Li Ang", "genre": "Thriller", "lang": "Mandarin", "rating": "4.3/5"},
-    {"title": "Dark River", "author": "Gu Long", "genre": "Thriller", "lang": "Mandarin", "rating": "4.5/5"},
 
     {"title": "Atomic Habits", "author": "James Clear", "genre": "Motivation", "lang": "English", "rating": "4.8/5"},
     {"title": "7 Habits of Highly Effective People", "author": "Stephen Covey", "genre": "Motivation", "lang": "English", "rating": "4.7/5"},
@@ -67,14 +61,11 @@ books = [
 
     {"title": "Living with Intent", "author": "Master Lin", "genre": "Motivation", "lang": "Mandarin", "rating": "4.9/5"},
     {"title": "Courage to be Disliked", "author": "Ichiro Kishimi", "genre": "Motivation", "lang": "Mandarin", "rating": "4.8/5"},
-    {"title": "Power of Concentration", "author": "Wang Yu", "genre": "Motivation", "lang": "Mandarin", "rating": "4.5/5"},
-    {"title": "Inner Peace", "author": "Lao Tzu", "genre": "Motivation", "lang": "Mandarin", "rating": "4.7/5"},
     {"title": "Path to Success", "author": "Jack Ma", "genre": "Motivation", "lang": "Mandarin", "rating": "4.6/5"},
 
     {"title": "It Ends with Us", "author": "Colleen Hoover", "genre": "Romance", "lang": "English", "rating": "4.7/5"},
     {"title": "The Love Hypothesis", "author": "Ali Hazelwood", "genre": "Romance", "lang": "English", "rating": "4.5/5"},
     {"title": "Beach Read", "author": "Emily Henry", "genre": "Romance", "lang": "English", "rating": "4.4/5"},
-    {"title": "Pride and Prejudice", "author": "Jane Austen", "genre": "Romance", "lang": "English", "rating": "4.9/5"},
     {"title": "Red, White & Royal Blue", "author": "Casey McQuiston", "genre": "Romance", "lang": "English", "rating": "4.6/5"},
 
     {"title": "Cinta Hijab", "author": "Anis Ayuni", "genre": "Romance", "lang": "Bahasa", "rating": "4.5/5"},
@@ -90,92 +81,124 @@ books = [
     {"title": "Punnagai Desam", "author": "K. Balachander", "genre": "Romance", "lang": "Tamil", "rating": "4.5/5"},
 
     {"title": "First Love", "author": "Gu Long", "genre": "Romance", "lang": "Mandarin", "rating": "4.5/5"},
-    {"title": "Together Forever", "author": "Qiong Yao", "genre": "Romance", "lang": "Mandarin", "rating": "4.7/5"},
-    {"title": "Autumn Tale", "author": "Song Hye", "genre": "Romance", "lang": "Mandarin", "rating": "4.6/5"},
-    {"title": "Secret Romance", "author": "Lin Yutang", "genre": "Romance", "lang": "Mandarin", "rating": "4.4/5"},
-    {"title": "Love in Beijing", "author": "Guo Jingming", "genre": "Romance", "lang": "Mandarin", "rating": "4.3/5"},
 
-    {"title": "Dune", "author": "Frank Herbert", "genre": "Sci-Fi", "lang": "English", "rating": "4.8/5"},
-    {"title": "Project Hail Mary", "author": "Andy Weir", "genre": "Sci-Fi", "lang": "English", "rating": "4.9/5"},
-    {"title": "Ender's Game", "author": "Orson Scott Card", "genre": "Sci-Fi", "lang": "English", "rating": "4.7/5"},
-    {"title": "Neuromancer", "author": "William Gibson", "genre": "Sci-Fi", "lang": "English", "rating": "4.4/5"},
-    {"title": "Foundation", "author": "Isaac Asimov", "genre": "Sci-Fi", "lang": "English", "rating": "4.6/5"},
+    {"title": "Dune", "author": "Frank Herbert", "genre": "Science Fiction", "lang": "English", "rating": "4.8/5"},
+    {"title": "Project Hail Mary", "author": "Andy Weir", "genre": "Science Fiction", "lang": "English", "rating": "4.9/5"},
+    {"title": "Ender's Game", "author": "Orson Scott Card", "genre": "Science Fiction", "lang": "English", "rating": "4.7/5"},
+    {"title": "Neuromancer", "author": "William Gibson", "genre": "Science Fiction", "lang": "English", "rating": "4.4/5"},
+    {"title": "Foundation", "author": "Isaac Asimov", "genre": "Science Fiction", "lang": "English", "rating": "4.6/5"},
 
-    {"title": "Dunia Keturunan", "author": "Adibah Amin", "genre": "Sci-Fi", "lang": "Bahasa", "rating": "4.3/5"},
-    {"title": "Galaksi Jiwa", "author": "Rahmat Haron", "genre": "Sci-Fi", "lang": "Bahasa", "rating": "4.5/5"},
-    {"title": "Mesin Masa", "author": "H.G. Wells", "genre": "Sci-Fi", "lang": "Bahasa", "rating": "4.6/5"},
-    {"title": "Bumi 2050", "author": "Ahmad Lutfi", "genre": "Sci-Fi", "lang": "Bahasa", "rating": "4.2/5"},
-    {"title": "Klon Pertama", "author": "Suraya Yaacob", "genre": "Sci-Fi", "lang": "Bahasa", "rating": "4.4/5"},
+    {"title": "Dunia Keturunan", "author": "Adibah Amin", "genre": "Science Fiction","lang": "Bahasa", "rating": "4.3/5"},
 
-    {"title": "2.0 Vision", "author": "Shankar", "genre": "Sci-Fi", "lang": "Tamil", "rating": "4.2/5"},
-    {"title": "Vaanam", "author": "Sujatha", "genre": "Sci-Fi", "lang": "Tamil", "rating": "4.8/5"},
-    {"title": "Yenthiran", "author": "Madhan", "genre": "Sci-Fi", "lang": "Tamil", "rating": "4.5/5"},
-    {"title": "Kaalam", "author": "S. Ramakrishnan", "genre": "Sci-Fi", "lang": "Tamil", "rating": "4.4/5"},
-    {"title": "Vinveli", "author": "Jayakanthan", "genre": "Sci-Fi", "lang": "Tamil", "rating": "4.6/5"},
-
-    {"title": "The Three-Body Problem", "author": "Liu Cixin", "genre": "Sci-Fi", "lang": "Mandarin", "rating": "4.9/5"},
-    {"title": "The Wandering Earth", "author": "Liu Cixin", "genre": "Sci-Fi", "lang": "Mandarin", "rating": "4.7/5"},
-    {"title": "Folding Beijing", "author": "Hao Jingfang", "genre": "Sci-Fi", "lang": "Mandarin", "rating": "4.6/5"},
-    {"title": "Waste Tide", "author": "Chen Qiufan", "genre": "Sci-Fi", "lang": "Mandarin", "rating": "4.4/5"},
-    {"title": "Starry Sky", "author": "Wang Jinkang", "genre": "Sci-Fi", "lang": "Mandarin", "rating": "4.5/5"}
+    {"title": "The Three-Body Problem", "author": "Liu Cixin", "genre": "Science Fiction", "lang": "Mandarin", "rating": "4.9/5"},
+    {"title": "The Wandering Earth", "author": "Liu Cixin", "genre": "Science Fiction", "lang": "Mandarin", "rating": "4.7/5"},
+    {"title": "Folding Beijing", "author": "Hao Jingfang", "genre": "Science Fiction", "lang": "Mandarin", "rating": "4.6/5"},
+    {"title": "Waste Tide", "author": "Chen Qiufan", "genre": "Science Fiction", "lang": "Mandarin", "rating": "4.4/5"},
+    {"title": "Starry Sky", "author": "Wang Jinkang", "genre": "Science Fiction", "lang": "Mandarin", "rating":"4.5/5"}
 ]
 
+def display_banner():
+    banner = """
+    ┌─────────────────────────────────────────────────────────────┐
+    │  Welcome to Rakuten Kobo Ebooks                             │
+    │                                                             │
+    │            ██╗  ██╗  ██████╗  ██████╗   ██████╗             │
+    │            ██║ ██╔╝ ██╔═══██╗ ██╔══██╗ ██╔═══██╗            │
+    │            █████═╝  ██║   ██║ ██████╔╝ ██║   ██║            │
+    │            ██╔═██╗  ██║   ██║ ██╔══██╗ ██║   ██║            │
+    │            ██║  ██╗ ╚██████╔╝ ██████╔╝ ╚██████╔╝            │
+    │            ╚═╝  ╚═╝  ╚═════╝  ╚═════╝   ╚═════╝             │
+    │                                                             │
+    └─────────────────────────────────────────────────────────────┘
+    Kobo helps to discover and finds your e-books 
+    ● Logged in as: Student
+    """
+    print(banner)
+
 def main():
-    print("\n")
-    print("       RAKUTEN KOBO E-BOOK SYSTEM         ")
-    print("\n")
-    
-    print("\nSo, what are you looking for?")
-    print("1. Action")
-    print("2. Thriller")
-    print("3. Motivation")
-    print("4. Romance")
-    print("5. Science Fiction")
-    
-    genre_choice = input("Select genre (1-5): ").strip()
-    
-    genres = {
-        "1": "Action", 
-        "2": "Thriller", 
-        "3": "Motivation", 
-        "4": "Romance", 
-        "5": "Science Fiction"
-    }
-    selected_genre = genres.get(genre_choice, "Action")
+    display_banner()
 
-    print("\nIn what language do you prefer?")
-    print("1. English")
-    print("2. Tamil")
-    print("3. Mandarin")
-    print("4. Bahasa")
-    
-    lang_choice = input("Select language (1-4): ").strip()
-    
-    languages = {
-        "1": "English", 
-        "2": "Tamil", 
-        "3": "Mandarin", 
-        "4": "Bahasa"
-    }
-    selected_lang = languages.get(lang_choice, "English")
+    while True:
+        genres = {
+            "action": "Action", 
+            "thriller": "Thriller", 
+            "motivation": "Motivation", 
+            "romance": "Romance", 
+            "science fiction": "Science Fiction"
+        }
 
-    print("\n")
-    print(f"RESULTS FOR: {selected_genre.upper()} [{selected_lang.upper()}]")
-    print("\n")
+        print("\nSo, what are you looking for?")
+        print("1. Action")
+        print("2. Thriller")
+        print("3. Motivation")
+        print("4. Romance")
+        print("5. Science Fiction")
+        
+        genre_choice = input("Select genre: ").strip().lower()
+        while genre_choice not in genres:
+            print("\n")
+            print("Sorryy, invalid genre! Please type the full genre name")
+            print("\n")
+            genre_choice = input("Select genre: ").strip().lower()
+            
+        selected_genre = genres[genre_choice]
 
-    count = 1
-    found = False
-    for book in books:
-        if book["genre"] == selected_genre and book["lang"] == selected_lang:
-            print(f"{count}. Title  : {book['title']}")
-            print(f"   Author : {book['author']}")
-            print(f"   Rating : {book['rating']}")
-            print("-" * 35)
-            count += 1
-            found = True
-    
-    if not found:
-        print("No books found for this combination.")
+        languages = {
+            "english": "English",
+            "tamil": "Tamil",
+            "mandarin": "Mandarin",
+            "bahasa": "Bahasa"
+        }
+
+        print("\nIn what language do you prefer?")
+        print("1. English")
+        print("2. Tamil")
+        print("3. Mandarin")
+        print("4. Bahasa")
+        
+        lang_choice = input("Select language: ").strip().lower()
+        while lang_choice not in languages:
+            print("\n")
+            print("Sorryy, invalid language! Please type the full language name")
+            print("\n")
+            lang_choice = input("Select language: ").strip().lower()
+            
+        selected_lang = languages[lang_choice]
+
+        print("\n")
+        print(f"Here are some {selected_genre.upper()} books in {selected_lang.upper()}:")
+        print("-------------------------------------------------------------")
+
+        count = 1
+        found = False
+        for book in books:
+            if book["genre"] == selected_genre and book["lang"] == selected_lang:
+                print(f"{count}. Title  : {book['title']}")
+                print(f"   Author : {book['author']}")
+                print(f"   Rating : {book['rating']}")
+                print("-------------------------------------------------------------")
+                count += 1
+                found = True
+                
+        if not found:
+            print("\n")
+            print("Oh nooo!! sorry no books found for this combination.")
+
+        print("\n")
+        ans = input("Okay, is this what you're looking for? (yes/no): ").strip().lower()
+        while ans not in ["yes", "y", "no", "n"]:
+            print("\n")
+            print("Sorryy, invalid response! Please type 'yes' or 'no'")
+            print("\n")
+            ans = input("Okay, is this what you're looking for? (yes/no): ").strip().lower()
+
+        if ans in ["yes", "y"]:
+            print("\n")
+            print("---------------------------------------------------")
+            print("Thank youuu for choosing Kobo! Enjoy your reading")
+            print("---------------------------------------------------")
+            print("\n")
+            break
 
 if __name__ == "__main__":
     main()
