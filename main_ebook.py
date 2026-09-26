@@ -127,7 +127,8 @@ def main():
             "science fiction": "Science Fiction"
         }
 
-        print("\nSo, what are you looking for?")
+        print("\n")
+        print("So, what genre are you looking for?")
         print("1. Action")
         print("2. Thriller")
         print("3. Motivation")
@@ -150,7 +151,8 @@ def main():
             "bahasa": "Bahasa"
         }
 
-        print("\nIn what language do you prefer?")
+        print("\n")
+        print("In what language do you prefer?")
         print("1. English")
         print("2. Tamil")
         print("3. Mandarin")
@@ -165,40 +167,63 @@ def main():
             
         selected_lang = languages[lang_choice]
 
-        print("\n")
-        print(f"Here are some {selected_genre.upper()} books in {selected_lang.upper()}:")
-        print("-------------------------------------------------------------")
-
-        count = 1
-        found = False
+        matching_books = []
         for book in books:
             if book["genre"] == selected_genre and book["lang"] == selected_lang:
+                matching_books.append(book)
+
+        if matching_books:
+            print("\n")
+            print(f"Here are some {selected_genre.upper()} books in {selected_lang.upper()}:")
+            print("-------------------------------------------------------------")
+
+            count = 1
+            for book in matching_books:
                 print(f"{count}. Title  : {book['title']}")
                 print(f"   Author : {book['author']}")
                 print(f"   Rating : {book['rating']}")
                 print("-------------------------------------------------------------")
                 count += 1
-                found = True
-                
-        if not found:
-            print("\n")
-            print("Oh nooo!! sorry no books found for this combination.")
 
-        print("\n")
-        ans = input("Okay, is this what you're looking for? (yes/no): ").strip().lower()
-        while ans not in ["yes", "y", "no", "n"]:
-            print("\n")
-            print("Sorryy, invalid response! Please type 'yes' or 'no'")
             print("\n")
             ans = input("Okay, is this what you're looking for? (yes/no): ").strip().lower()
+            while ans not in ["yes", "y", "no", "n"]:
+                print("\n")
+                print("Sorryy, invalid response! Please type 'yes' or 'no'")
+                print("\n")
+                ans = input("Okay, is this what you're looking for? (yes/no): ").strip().lower()
 
-        if ans in ["yes", "y"]:
+            if ans in ["yes", "y"]:
+                print("\n")
+                print("---------------------------------------------------")
+                print("Thank youuu for choosing Kobo! Enjoy your reading")
+                print("---------------------------------------------------")
+                print("\n")
+                break
+
+        else:
             print("\n")
             print("---------------------------------------------------")
-            print("Thank youuu for choosing Kobo! Enjoy your reading")
+            print("Oh nooo!! sorry no books found for this combination.")
             print("---------------------------------------------------")
             print("\n")
-            break
+            
+            retry_choice = input("Do you want to select genre again? (yes/no): ").strip().lower()
+            while retry_choice not in ["yes", "y", "no", "n"]:
+                print("\n")
+                print("Sorryy, invalid response! Please type 'yes' or 'no'")
+                print("\n")
+                retry_choice = input("Do you want to select genre again? (yes/no): ").strip().lower()
+
+            if retry_choice in ["yes", "y"]:
+                continue
+            else:
+                print("\n")
+                print("---------------------------------------------------")
+                print("Thank youuu for using Kobo! Goodbye!")
+                print("---------------------------------------------------")
+                print("\n")
+                break
 
 if __name__ == "__main__":
     main()
