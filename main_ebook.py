@@ -33,8 +33,9 @@ books = [
     {"title": "Jejak Rahsia", "author": "Faisal Tehrani", "genre": "Thriller", "lang": "Bahasa", "rating": "4.4/5"},
     {"title": "Jerat", "author": "Tunku Halim", "genre": "Thriller", "lang": "Bahasa", "rating": "4.6/5"},
 
-    {"title": "Vettai", "author": "S. Ramakrishnan", "genre": "Thriller", "lang": "Tamil", "rating": "4.7/5"},
-    {"title": "Marmadesam", "author": "Indra Soundar Rajan", "genre": "Thriller", "lang": "Tamil", "rating": "4.8/5"},
+    {"title": "Kottai Purathu Veedu", "author": "Indra Soundar Rajan", "genre": "Thriller", "lang": "Tamil", "rating": "4.8/5"},
+    {"title": "Kolaiyuthir Kaalam", "author": "Sujatha", "genre": "Thriller", "lang": "Tamil", "rating": "4.7/5"},
+    {"title": "Nylon Kayiru", "author": "Sujatha", "genre": "Thriller", "lang": "Tamil", "rating": "4.6/5"},
    
     {"title": "Midnight Hunt", "author": "Zhang Wei", "genre": "Thriller", "lang": "Mandarin", "rating": "4.6/5"},
     {"title": "Bad Kids", "author": "Zijin Chen", "genre": "Thriller", "lang": "Mandarin", "rating": "4.8/5"},
@@ -74,11 +75,11 @@ books = [
     {"title": "Setia Hujung Nyawa", "author": "Fatin Nabila", "genre": "Romance", "lang": "Bahasa", "rating": "4.4/5"},
     {"title": "Dia Semanis Honey", "author": "Dhiya Zafira", "genre": "Romance", "lang": "Bahasa", "rating": "4.7/5"},
 
-    {"title": "Kadhala Kadhala", "author": "Sujatha", "genre": "Romance", "lang": "Tamil", "rating": "4.6/5"},
-    {"title": "Anbe Sivam", "author": "Mani Ratnam", "genre": "Romance", "lang": "Tamil", "rating": "4.7/5"},
-    {"title": "Nenjathai Killadhe", "author": "Ramanan", "genre": "Romance", "lang": "Tamil", "rating": "4.3/5"},
-    {"title": "Moondram Pirai", "author": "Balu Mahendra", "genre": "Romance", "lang": "Tamil", "rating": "4.8/5"},
-    {"title": "Punnagai Desam", "author": "K. Balachander", "genre": "Romance", "lang": "Tamil", "rating": "4.5/5"},
+    {"title": "Vaanathil Oru Vennila", "author": "Ramanichandran", "genre": "Romance", "lang": "Tamil", "rating": "4.6/5"},
+    {"title": "Mercury Pookkal", "author": "Balakumaran", "genre": "Romance", "lang": "Tamil", "rating": "4.7/5"},
+    {"title": "Pirivom Sandhippom", "author": "Sujatha", "genre": "Romance", "lang": "Tamil", "rating": "4.5/5"},
+    {"title": "Sila Nerangalil Sila Manidharagal", "author": "Jayakanthan", "genre": "Romance", "lang": "Tamil", "rating": "4.8/5"},
+    {"title": "Oru Kadhal Oru Kavithai", "author": "Sivasankari", "genre": "Romance", "lang": "Tamil", "rating": "4.4/5"},
 
     {"title": "First Love", "author": "Gu Long", "genre": "Romance", "lang": "Mandarin", "rating": "4.5/5"},
 
@@ -117,192 +118,136 @@ def display_banner():
     
 
 def main():
+    genres = {
+        "action": "Action", 
+        "thriller": "Thriller", 
+        "motivation": "Motivation", 
+        "romance": "Romance", 
+        "science fiction": "Science Fiction"
+    }
+
+    languages = {
+        "english": "English",
+        "tamil": "Tamil",
+        "mandarin": "Mandarin",
+        "bahasa": "Bahasa"
+    }
+
     while True:
         display_banner()
 
-        print("\n")
-        print("So, what genre are you looking for?")
-        print("1. Action")
-        print("2. Thriller")
-        print("3. Motivation")
-        print("4. Romance")
-        print("5. Science Fiction")
-        
-        genre_choice = input("Select genre: ").strip().lower()
-        while genre_choice not in genres:
-            print("\n")
-            print("Sorryy, invalid genre! Please type the full genre name")
-            print("\n")
-            genre_choice = input("Select genre: ").strip().lower()
-            
-        selected_genre = genres[genre_choice]
         print("1. Book recomendation")
         print("2. View book details")
         print("3. Exit")
 
-        choice = input("Enter your choice:")
+        choice = input("Enter your choice: ").strip()
+
         if choice == "1":
+            print("\n")
+            print("So, what genre are you looking for?")
+            print("1. Action")
+            print("2. Thriller")
+            print("3. Motivation")
+            print("4. Romance")
+            print("5. Science Fiction")
+            
+            genre_choice = input("Select genre: ").strip().lower()
+            while genre_choice not in genres:
+                print("\n")
+                print("---------------------------------------------------")
+                print("Sorry, invalid genre! Please type the full genre name")
+                print("---------------------------------------------------")
+                print("\n")
+                genre_choice = input("Select genre: ").strip().lower()
+                
+            selected_genre = genres[genre_choice]
 
-        print("\n")
-        print("In what language do you prefer?")
-        print("1. English")
-        print("2. Tamil")
-        print("3. Mandarin")
-        print("4. Bahasa")
-        
-        lang_choice = input("Select language: ").strip().lower()
-        while lang_choice not in languages:
             print("\n")
-            print("Sorryy, invalid language! Please type the full language name")
-            print("\n")
+            print("In what language do you prefer?")
+            print("1. English")
+            print("2. Tamil")
+            print("3. Mandarin")
+            print("4. Bahasa")
+            
             lang_choice = input("Select language: ").strip().lower()
-            
-        selected_lang = languages[lang_choice]
+            while lang_choice not in languages:
+                print("\n")
+                print("---------------------------------------------------")
+                print("Sorry, invalid language! Please type the full language name")
+                print("---------------------------------------------------")
+                print("\n")
+                lang_choice = input("Select language: ").strip().lower()
+                
+            selected_lang = languages[lang_choice]
 
-        matching_books = []
-        for book in books:
-            if book["genre"] == selected_genre and book["lang"] == selected_lang:
-                matching_books.append(book)
+            matching_books = []
+            for book in books:
+                if book["genre"] == selected_genre and book["lang"] == selected_lang:
+                    matching_books.append(book)
 
-        if matching_books:
-            print("\n")
-            print(f"Here are some {selected_genre.upper()} books in {selected_lang.upper()}:")
-            print("-------------------------------------------------------------")
-
-            count = 1
-            for book in matching_books:
-                print(f"{count}. Title  : {book['title']}")
-                print(f"   Author : {book['author']}")
-                print(f"   Rating : {book['rating']}")
+            if matching_books:
+                print("\n")
                 print("-------------------------------------------------------------")
-                count += 1
+                print(f"Here are some {selected_genre.upper()} books in {selected_lang.upper()}:")
+                print("-------------------------------------------------------------")
+                print("\n")
 
-            print("\n")
-            ans = input("Okay, is this what you're looking for? (yes/no): ").strip().lower()
-            while ans not in ["yes", "y", "no", "n"]:
+                count = 1
+                for book in matching_books:
+                    print(f"{count}. Title  : {book['title']}")
+                    print(f"   Author : {book['author']}")
+                    print(f"   Rating : {book['rating']}")
+                    print("-------------------------------------------------------------")
+                    count += 1
+
                 print("\n")
-                print("Sorryy, invalid response! Please type 'yes' or 'no'")
-                print("\n")
+                print("---------------------------------------------------")
                 ans = input("Okay, is this what you're looking for? (yes/no): ").strip().lower()
+                while ans not in ["yes", "y", "no", "n"]:
+                    print("\n")
+                    print("---------------------------------------------------")
+                    print("Sorry, invalid response! Please type 'yes' or 'no'")
+                    print("---------------------------------------------------")
+                    print("\n")
+                    ans = input("Okay, is this what you're looking for? (yes/no): ").strip().lower()
 
-            if ans in ["yes", "y"]:
-                print("\n")
-                print("---------------------------------------------------")
-                print("Thank youuu for choosing Kobo! Enjoy your reading")
-                print("---------------------------------------------------")
-                print("\n")
-                break
+                if ans in ["yes", "y"]:
+                    print("\n")
+                    print("---------------------------------------------------")
+                    print("Thank youuu for choosing Kobo! Enjoy your reading")
+                    print("---------------------------------------------------")
+                    print("\n")
+                    break
 
-        else:
-            print("\n")
-            print("---------------------------------------------------")
-            print("Oh nooo!! sorry no books found for this combination.")
-            print("---------------------------------------------------")
-            print("\n")
-            
-            retry_choice = input("Do you want to select genre again? (yes/no): ").strip().lower()
-            while retry_choice not in ["yes", "y", "no", "n"]:
-                print("\n")
-                print("Sorryy, invalid response! Please type 'yes' or 'no'")
-                print("\n")
-                retry_choice = input("Do you want to select genre again? (yes/no): ").strip().lower()
-
-            if retry_choice in ["yes", "y"]:
-                continue
             else:
                 print("\n")
                 print("---------------------------------------------------")
-                print("Thank youuu for using Kobo! Goodbye!")
+                print("Oh nooo!! sorry no books found for this combination.")
                 print("---------------------------------------------------")
                 print("\n")
-                break
-                while True:
-                    genres = {
-                        "action": "Action", 
-                        "thriller": "Thriller", 
-                        "motivation": "Motivation", 
-                        "romance": "Romance", 
-                        "science fiction": "Science Fiction"
-                    }
-
-                    print("\nSo, what are you looking for?")
-                    print("1. Action")
-                    print("2. Thriller")
-                    print("3. Motivation")
-                    print("4. Romance")
-                    print("5. Science Fiction")
-                    
-                    genre_choice = input("Select genre: ").strip().lower()
-                    while genre_choice not in genres:
-                        print("\n")
-                        print("Sorryy, invalid genre! Please type the full genre name")
-                        print("\n")
-                        genre_choice = input("Select genre: ").strip().lower()
-                        
-                    selected_genre = genres[genre_choice]
-
-                    languages = {
-                        "english": "English",
-                        "tamil": "Tamil",
-                        "mandarin": "Mandarin",
-                        "bahasa": "Bahasa"
-                    }
-
-                    print("\nIn what language do you prefer?")
-                    print("1. English")
-                    print("2. Tamil")
-                    print("3. Mandarin")
-                    print("4. Bahasa")
-                    
-                    lang_choice = input("Select language: ").strip().lower()
-                    while lang_choice not in languages:
-                        print("\n")
-                        print("Sorryy, invalid language! Please type the full language name")
-                        print("\n")
-                        lang_choice = input("Select language: ").strip().lower()
-                        
-                    selected_lang = languages[lang_choice]
-
+                retry_choice = input("Do you want to select genre again? (yes/no): ").strip().lower()
+                while retry_choice not in ["yes", "y", "no", "n"]:
                     print("\n")
-                    print(f"Here are some {selected_genre.upper()} books in {selected_lang.upper()}:")
-                    print("-------------------------------------------------------------")
-
-                    count = 1
-                    found = False
-                    for book in books:
-                        if book["genre"] == selected_genre and book["lang"] == selected_lang:
-                            print(f"{count}. Title  : {book['title']}")
-                            print(f"   Author : {book['author']}")
-                            print(f"   Rating : {book['rating']}")
-                            print("-------------------------------------------------------------")
-                            count += 1
-                            found = True
-                            
-                    if not found:
-                        print("\n")
-                        print("Oh nooo!! sorry no books found for this combination.")
-
+                    print("---------------------------------------------------")
+                    print("Sorry, invalid response! Please type 'yes' or 'no'")
                     print("\n")
-                    ans = input("Okay, is this what you're looking for? (yes/no): ").strip().lower()
-                    while ans not in ["yes", "y", "no", "n"]:
-                        print("\n")
-                        print("Sorryy, invalid response! Please type 'yes' or 'no'")
-                        print("\n")
-                        ans = input("Okay, is this what you're looking for? (yes/no): ").strip().lower()
+                    print("---------------------------------------------------")
+                    retry_choice = input("Do you want to select genre again? (yes/no): ").strip().lower()
 
-                    if ans in ["yes", "y"]:
-                        print("\n")
-                        print("---------------------------------------------------")
-                        print("Thank youuu for choosing Kobo! Enjoy your reading")
-                        print("---------------------------------------------------")
-                        print("\n")
-                        break
+                if retry_choice in ["yes", "y"]:
+                    continue
+                else:
+                    print("\n")
+                    print("---------------------------------------------------")
+                    print("Thank youuu for using Kobo! Goodbye!")
+                    print("---------------------------------------------------")
+                    break
 
         elif choice == "2":
             print("\n==================================")
-            print(       "List of Book Available       ")
+            print("       List of Book Available       ")
             print("==================================\n")
-            for index, book in enumerate (books, start=1):
+            for index, book in enumerate(books, start=1):
                 print(f"{index}. {book['title']}")
 
             book_choice = input("Enter the book number to view the details:")
@@ -324,8 +269,6 @@ def main():
         elif choice == "3":
             print("Thank You for choosing Kobo!!!")
             break
-            
-            
 
 if __name__ == "__main__":
     main()
