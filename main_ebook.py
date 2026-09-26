@@ -1,8 +1,4 @@
 
-
-
-
-
 books = [
     {"title": "Die Hard: Year One", "author": "Howard Chaykin", "genre": "Action", "lang": "English", "rating": "4.2/5"},
     {"title": "The Terminal List", "author": "Jack Carr", "genre": "Action", "lang": "English", "rating": "4.7/5"},
@@ -146,62 +142,69 @@ def display_banner():
 def main():
     display_banner()
 
-    print("\nSo, what are you looking for?")
-    print("1. Action")
-    print("2. Thriller")
-    print("3. Motivation")
-    print("4. Romance")
-    print("5. Science Fiction")
-    
-    genre_choice = input("Select genre (1-5): ").strip()
-    
-    genres = {
-        "1": "Action", 
-        "2": "Thriller", 
-        "3": "Motivation", 
-        "4": "Romance", 
-        "5": "Science Fiction"
-    }
-    selected_genre = genres.get(genre_choice, "Action")
+    while True:
+        print("\nSo, what are you looking for?")
+        print("1. Action")
+        print("2. Thriller")
+        print("3. Motivation")
+        print("4. Romance")
+        print("5. Science Fiction")
+        
+        genre_choice = input("Select genre: ").strip()
+        
+        genres = {
+            "action": "Action", 
+            "thriller": "Thriller", 
+            "motivation": "Motivation", 
+            "romance": "Romance", 
+            "science fiction": "Science Fiction"
+        }
+        selected_genre = genres.get(genre_choice, "Action")
 
-    print("\nIn what language do you prefer?")
-    print("1. English")
-    print("2. Tamil")
-    print("3. Mandarin")
-    print("4. Bahasa")
-    
-    lang_choice = input("Select language (1-4): ").strip()
-    
-    languages = {
-        "1": "English", 
-        "2": "Tamil", 
-        "3": "Mandarin", 
-        "4": "Bahasa"
-    }
-    selected_lang = languages.get(lang_choice, "English")
+        print("\nIn what language do you prefer?")
+        print("1. English")
+        print("2. Tamil")
+        print("3. Mandarin")
+        print("4. Bahasa")
+        
+        lang_choice = input("Select language: ").strip()
+        
+        languages = {
+            "english": "English",
+            "tamil": "Tamil",
+            "mandarin": "Mandarin",
+            "bahasa": "Bahasa"
+        }
+        selected_lang = languages.get(lang_choice, "English")
 
-    
-    print("\n")
-    print("-------------------------------------------------------------")
-    print(f"Here are some {selected_genre.upper()} books in {selected_lang.upper()}:")
-    print("-------------------------------------------------------------")
-    print("\n")
-    print("Okay, is this what you're looking for?")
-    print("-------------------------------------------------------------")
+        print("\n")
+        print("-------------------------------------------------------------")
+        print(f"Here are some {selected_genre.upper()} books in {selected_lang.upper()}:")
+        print("-------------------------------------------------------------")
+        print("\n")
+        print("-------------------------------------------------------------")
 
-    count = 1
-    found = False
-    for book in books:
-        if book["genre"] == selected_genre and book["lang"] == selected_lang:
-            print(f"{count}. Title  : {book['title']}")
-            print(f"   Author : {book['author']}")
-            print(f"   Rating : {book['rating']}")
-            print("-------------------------------------------------------------")
-            count += 1
-            found = True
-    
-    if not found:
-        print("No books found for this combination.")
+        count = 1
+        found = False
+        for book in books:
+            if book["genre"] == selected_genre and book["lang"] == selected_lang:
+                print(f"{count}. Title  : {book['title']}")
+                print(f"   Author : {book['author']}")
+                print(f"   Rating : {book['rating']}")
+                print("-------------------------------------------------------------")
+                count += 1
+                found = True
+                
+        if not found:
+            print("Oh nooo, sorry no books found for this combination.")
+
+        print("\n")
+        ans = input("Okay, is this what you're looking for? (yes/no): ").strip().lower()
+        if ans in ["yes", "y"]:
+            print("\n")
+            print("Thank you for choosing Kobo! Enjoy your reading")
+            print("\n")
+            break
 
 if __name__ == "__main__":
     main()
