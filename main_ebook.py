@@ -1,3 +1,8 @@
+
+
+
+
+
 books = [
     {"title": "Die Hard: Year One", "author": "Howard Chaykin", "genre": "Action", "lang": "English", "rating": "4.2/5"},
     {"title": "The Terminal List", "author": "Jack Carr", "genre": "Action", "lang": "English", "rating": "4.7/5"},
@@ -120,11 +125,27 @@ books = [
     {"title": "Starry Sky", "author": "Wang Jinkang", "genre": "Sci-Fi", "lang": "Mandarin", "rating": "4.5/5"}
 ]
 
+def display_banner():
+    banner = """
+    ┌─────────────────────────────────────────────────────────────┐
+    │  Welcome to Rakuten Kobo Ebooks                             │
+    │                                                             │
+    │            ██╗  ██╗  ██████╗  ██████╗   ██████╗             │
+    │            ██║ ██╔╝ ██╔═══██╗ ██╔══██╗ ██╔═══██╗            │
+    │            █████═╝  ██║   ██║ ██████╔╝ ██║   ██║            │
+    │            ██╔═██╗  ██║   ██║ ██╔══██╗ ██║   ██║            │
+    │            ██║  ██╗ ╚██████╔╝ ██████╔╝ ╚██████╔╝            │
+    │            ╚═╝  ╚═╝  ╚═════╝  ╚═════╝   ╚═════╝             │
+    │                                                             │
+    └─────────────────────────────────────────────────────────────┘
+    Kobo helps to discover and finds your e-books 
+    ● Logged in as: Student | Mode: Active
+    """
+    print(banner)
+
 def main():
-    print("\n")
-    print("       RAKUTEN KOBO E-BOOK SYSTEM         ")
-    print("\n")
-    
+    display_banner()
+
     print("\nSo, what are you looking for?")
     print("1. Action")
     print("2. Thriller")
@@ -159,9 +180,14 @@ def main():
     }
     selected_lang = languages.get(lang_choice, "English")
 
+    
     print("\n")
-    print(f"RESULTS FOR: {selected_genre.upper()} [{selected_lang.upper()}]")
+    print("-------------------------------------------------------------")
+    print(f"Here are some {selected_genre.upper()} books in {selected_lang.upper()}:")
+    print("-------------------------------------------------------------")
     print("\n")
+    print("Okay, is this what you're looking for?")
+    print("-------------------------------------------------------------")
 
     count = 1
     found = False
@@ -170,7 +196,7 @@ def main():
             print(f"{count}. Title  : {book['title']}")
             print(f"   Author : {book['author']}")
             print(f"   Rating : {book['rating']}")
-            print("-" * 35)
+            print("-------------------------------------------------------------")
             count += 1
             found = True
     
