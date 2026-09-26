@@ -14,15 +14,12 @@ books = [
 
     {"title": "Veeran", "author": "M. Karunanidhi", "genre": "Action", "lang": "Tamil", "rating": "4.4/5"},
     {"title": "Por Kalidasa", "author": "S. Murugan", "genre": "Action", "lang": "Tamil", "rating": "4.5/5"},
-    {"title": "Velpari", "author": "Su. Venkatesan", "genre": "Action", "lang": "Tamil", "rating": "4.9/5"},
     {"title": "Sura", "author": "K. Rajan", "genre": "Action", "lang": "Tamil", "rating": "4.2/5"},
     {"title": "Kaban", "author": "T. Raman", "genre": "Action", "lang": "Tamil", "rating": "4.3/5"},
 
     {"title": "Dragon Blade", "author": "Chen Long", "genre": "Action", "lang": "Mandarin", "rating": "4.5/5"},
     {"title": "Shadow Warrior", "author": "Zhang Wei", "genre": "Action", "lang": "Mandarin", "rating": "4.6/5"},
     {"title": "Wuxia Legend", "author": "Jin Yong", "genre": "Action", "lang": "Mandarin", "rating": "4.9/5"},
-    {"title": "Iron Fist", "author": "Liu Ming", "genre": "Action", "lang": "Mandarin", "rating": "4.3/5"},
-    {"title": "Blade of Destiny", "author": "Wang Feng", "genre": "Action", "lang": "Mandarin", "rating": "4.4/5"},
 
     {"title": "The Silent Patient", "author": "Alex Michaelides", "genre": "Thriller", "lang": "English", "rating": "4.5/5"},
     {"title": "Gone Girl", "author": "Gillian Flynn", "genre": "Thriller", "lang": "English", "rating": "4.8/5"},
@@ -38,15 +35,11 @@ books = [
 
     {"title": "Vettai", "author": "S. Ramakrishnan", "genre": "Thriller", "lang": "Tamil", "rating": "4.7/5"},
     {"title": "Marmadesam", "author": "Indra Soundar Rajan", "genre": "Thriller", "lang": "Tamil", "rating": "4.8/5"},
-    {"title": "Nizhal", "author": "Balakumaran", "genre": "Thriller", "lang": "Tamil", "rating": "4.4/5"},
-    {"title": "Irul", "author": "Charu Nivedita", "genre": "Thriller", "lang": "Tamil", "rating": "4.3/5"},
-    {"title": "Rahasya", "author": "Pattukkottai Prabakar", "genre": "Thriller", "lang": "Tamil", "rating": "4.6/5"},
-
+   
     {"title": "Midnight Hunt", "author": "Zhang Wei", "genre": "Thriller", "lang": "Mandarin", "rating": "4.6/5"},
     {"title": "Bad Kids", "author": "Zijin Chen", "genre": "Thriller", "lang": "Mandarin", "rating": "4.8/5"},
     {"title": "The Long Night", "author": "Chen Zijin", "genre": "Thriller", "lang": "Mandarin", "rating": "4.7/5"},
     {"title": "Silent Shadow", "author": "Li Ang", "genre": "Thriller", "lang": "Mandarin", "rating": "4.3/5"},
-    {"title": "Dark River", "author": "Gu Long", "genre": "Thriller", "lang": "Mandarin", "rating": "4.5/5"},
 
     {"title": "Atomic Habits", "author": "James Clear", "genre": "Motivation", "lang": "English", "rating": "4.8/5"},
     {"title": "7 Habits of Highly Effective People", "author": "Stephen Covey", "genre": "Motivation", "lang": "English", "rating": "4.7/5"},
@@ -68,14 +61,11 @@ books = [
 
     {"title": "Living with Intent", "author": "Master Lin", "genre": "Motivation", "lang": "Mandarin", "rating": "4.9/5"},
     {"title": "Courage to be Disliked", "author": "Ichiro Kishimi", "genre": "Motivation", "lang": "Mandarin", "rating": "4.8/5"},
-    {"title": "Power of Concentration", "author": "Wang Yu", "genre": "Motivation", "lang": "Mandarin", "rating": "4.5/5"},
-    {"title": "Inner Peace", "author": "Lao Tzu", "genre": "Motivation", "lang": "Mandarin", "rating": "4.7/5"},
     {"title": "Path to Success", "author": "Jack Ma", "genre": "Motivation", "lang": "Mandarin", "rating": "4.6/5"},
 
     {"title": "It Ends with Us", "author": "Colleen Hoover", "genre": "Romance", "lang": "English", "rating": "4.7/5"},
     {"title": "The Love Hypothesis", "author": "Ali Hazelwood", "genre": "Romance", "lang": "English", "rating": "4.5/5"},
     {"title": "Beach Read", "author": "Emily Henry", "genre": "Romance", "lang": "English", "rating": "4.4/5"},
-    {"title": "Pride and Prejudice", "author": "Jane Austen", "genre": "Romance", "lang": "English", "rating": "4.9/5"},
     {"title": "Red, White & Royal Blue", "author": "Casey McQuiston", "genre": "Romance", "lang": "English", "rating": "4.6/5"},
 
     {"title": "Cinta Hijab", "author": "Anis Ayuni", "genre": "Romance", "lang": "Bahasa", "rating": "4.5/5"},
@@ -91,28 +81,20 @@ books = [
     {"title": "Punnagai Desam", "author": "K. Balachander", "genre": "Romance", "lang": "Tamil", "rating": "4.5/5"},
 
     {"title": "First Love", "author": "Gu Long", "genre": "Romance", "lang": "Mandarin", "rating": "4.5/5"},
-    {"title": "Together Forever", "author": "Qiong Yao", "genre": "Romance", "lang": "Mandarin", "rating": "4.7/5"},
-    {"title": "Autumn Tale", "author": "Song Hye", "genre": "Romance", "lang": "Mandarin", "rating": "4.6/5"},
-    {"title": "Secret Romance", "author": "Lin Yutang", "genre": "Romance", "lang": "Mandarin", "rating": "4.4/5"},
-    {"title": "Love in Beijing", "author": "Guo Jingming", "genre": "Romance", "lang": "Mandarin", "rating": "4.3/5"},
 
-    {"title": "Dune", "author": "Frank Herbert", "genre": "Sci-Fi", "lang": "English", "rating": "4.8/5"},
-    {"title": "Project Hail Mary", "author": "Andy Weir", "genre": "Sci-Fi", "lang": "English", "rating": "4.9/5"},
-    {"title": "Ender's Game", "author": "Orson Scott Card", "genre": "Sci-Fi", "lang": "English", "rating": "4.7/5"},
-    {"title": "Neuromancer", "author": "William Gibson", "genre": "Sci-Fi", "lang": "English", "rating": "4.4/5"},
-    {"title": "Foundation", "author": "Isaac Asimov", "genre": "Sci-Fi", "lang": "English", "rating": "4.6/5"},
+    {"title": "Dune", "author": "Frank Herbert", "genre": "Science Fiction", "lang": "English", "rating": "4.8/5"},
+    {"title": "Project Hail Mary", "author": "Andy Weir", "genre": "Science Fiction", "lang": "English", "rating": "4.9/5"},
+    {"title": "Ender's Game", "author": "Orson Scott Card", "genre": "Science Fiction", "lang": "English", "rating": "4.7/5"},
+    {"title": "Neuromancer", "author": "William Gibson", "genre": "Science Fiction", "lang": "English", "rating": "4.4/5"},
+    {"title": "Foundation", "author": "Isaac Asimov", "genre": "Science Fiction", "lang": "English", "rating": "4.6/5"},
 
-    {"title": "Dunia Keturunan", "author": "Adibah Amin", "genre": "Sci-Fi", "lang": "Bahasa", "rating": "4.3/5"},
-    {"title": "Galaksi Jiwa", "author": "Rahmat Haron", "genre": "Sci-Fi", "lang": "Bahasa", "rating": "4.5/5"},
-    {"title": "Mesin Masa", "author": "H.G. Wells", "genre": "Sci-Fi", "lang": "Bahasa", "rating": "4.6/5"},
-    {"title": "Bumi 2050", "author": "Ahmad Lutfi", "genre": "Sci-Fi", "lang": "Bahasa", "rating": "4.2/5"},
-    {"title": "Klon Pertama", "author": "Suraya Yaacob", "genre": "Sci-Fi", "lang": "Bahasa", "rating": "4.4/5"},
+    {"title": "Dunia Keturunan", "author": "Adibah Amin", "genre": "Science Fiction","lang": "Bahasa", "rating": "4.3/5"},
 
-    {"title": "The Three-Body Problem", "author": "Liu Cixin", "genre": "Sci-Fi", "lang": "Mandarin", "rating": "4.9/5"},
-    {"title": "The Wandering Earth", "author": "Liu Cixin", "genre": "Sci-Fi", "lang": "Mandarin", "rating": "4.7/5"},
-    {"title": "Folding Beijing", "author": "Hao Jingfang", "genre": "Sci-Fi", "lang": "Mandarin", "rating": "4.6/5"},
-    {"title": "Waste Tide", "author": "Chen Qiufan", "genre": "Sci-Fi", "lang": "Mandarin", "rating": "4.4/5"},
-    {"title": "Starry Sky", "author": "Wang Jinkang", "genre": "Sci-Fi", "lang": "Mandarin", "rating": "4.5/5"}
+    {"title": "The Three-Body Problem", "author": "Liu Cixin", "genre": "Science Fiction", "lang": "Mandarin", "rating": "4.9/5"},
+    {"title": "The Wandering Earth", "author": "Liu Cixin", "genre": "Science Fiction", "lang": "Mandarin", "rating": "4.7/5"},
+    {"title": "Folding Beijing", "author": "Hao Jingfang", "genre": "Science Fiction", "lang": "Mandarin", "rating": "4.6/5"},
+    {"title": "Waste Tide", "author": "Chen Qiufan", "genre": "Science Fiction", "lang": "Mandarin", "rating": "4.4/5"},
+    {"title": "Starry Sky", "author": "Wang Jinkang", "genre": "Science Fiction", "lang": "Mandarin", "rating":"4.5/5"}
 ]
 
 def display_banner():
@@ -204,9 +186,17 @@ def main():
 
         print("\n")
         ans = input("Okay, is this what you're looking for? (yes/no): ").strip().lower()
+        while ans not in ["yes", "y", "no", "n"]:
+            print("\n")
+            print("Sorryy, invalid response! Please type 'yes' or 'no'")
+            print("\n")
+            ans = input("Okay, is this what you're looking for? (yes/no): ").strip().lower()
+
         if ans in ["yes", "y"]:
             print("\n")
+            print("---------------------------------------------------")
             print("Thank youuu for choosing Kobo! Enjoy your reading")
+            print("---------------------------------------------------")
             print("\n")
             break
 
