@@ -108,12 +108,6 @@ books = [
     {"title": "Bumi 2050", "author": "Ahmad Lutfi", "genre": "Sci-Fi", "lang": "Bahasa", "rating": "4.2/5"},
     {"title": "Klon Pertama", "author": "Suraya Yaacob", "genre": "Sci-Fi", "lang": "Bahasa", "rating": "4.4/5"},
 
-    {"title": "2.0 Vision", "author": "Shankar", "genre": "Sci-Fi", "lang": "Tamil", "rating": "4.2/5"},
-    {"title": "Vaanam", "author": "Sujatha", "genre": "Sci-Fi", "lang": "Tamil", "rating": "4.8/5"},
-    {"title": "Yenthiran", "author": "Madhan", "genre": "Sci-Fi", "lang": "Tamil", "rating": "4.5/5"},
-    {"title": "Kaalam", "author": "S. Ramakrishnan", "genre": "Sci-Fi", "lang": "Tamil", "rating": "4.4/5"},
-    {"title": "Vinveli", "author": "Jayakanthan", "genre": "Sci-Fi", "lang": "Tamil", "rating": "4.6/5"},
-
     {"title": "The Three-Body Problem", "author": "Liu Cixin", "genre": "Sci-Fi", "lang": "Mandarin", "rating": "4.9/5"},
     {"title": "The Wandering Earth", "author": "Liu Cixin", "genre": "Sci-Fi", "lang": "Mandarin", "rating": "4.7/5"},
     {"title": "Folding Beijing", "author": "Hao Jingfang", "genre": "Sci-Fi", "lang": "Mandarin", "rating": "4.6/5"},
@@ -135,7 +129,7 @@ def display_banner():
     │                                                             │
     └─────────────────────────────────────────────────────────────┘
     Kobo helps to discover and finds your e-books 
-    ● Logged in as: Student | Mode: Active
+    ● Logged in as: Student
     """
     print(banner)
 
@@ -143,15 +137,6 @@ def main():
     display_banner()
 
     while True:
-        print("\nSo, what are you looking for?")
-        print("1. Action")
-        print("2. Thriller")
-        print("3. Motivation")
-        print("4. Romance")
-        print("5. Science Fiction")
-        
-        genre_choice = input("Select genre: ").strip()
-        
         genres = {
             "action": "Action", 
             "thriller": "Thriller", 
@@ -159,7 +144,29 @@ def main():
             "romance": "Romance", 
             "science fiction": "Science Fiction"
         }
-        selected_genre = genres.get(genre_choice, "Action")
+
+        print("\nSo, what are you looking for?")
+        print("1. Action")
+        print("2. Thriller")
+        print("3. Motivation")
+        print("4. Romance")
+        print("5. Science Fiction")
+        
+        genre_choice = input("Select genre: ").strip().lower()
+        while genre_choice not in genres:
+            print("\n")
+            print("Sorryy, invalid genre! Please type the full genre name")
+            print("\n")
+            genre_choice = input("Select genre: ").strip().lower()
+            
+        selected_genre = genres[genre_choice]
+
+        languages = {
+            "english": "English",
+            "tamil": "Tamil",
+            "mandarin": "Mandarin",
+            "bahasa": "Bahasa"
+        }
 
         print("\nIn what language do you prefer?")
         print("1. English")
@@ -167,21 +174,17 @@ def main():
         print("3. Mandarin")
         print("4. Bahasa")
         
-        lang_choice = input("Select language: ").strip()
-        
-        languages = {
-            "english": "English",
-            "tamil": "Tamil",
-            "mandarin": "Mandarin",
-            "bahasa": "Bahasa"
-        }
-        selected_lang = languages.get(lang_choice, "English")
+        lang_choice = input("Select language: ").strip().lower()
+        while lang_choice not in languages:
+            print("\n")
+            print("Sorryy, invalid language! Please type the full language name")
+            print("\n")
+            lang_choice = input("Select language: ").strip().lower()
+            
+        selected_lang = languages[lang_choice]
 
         print("\n")
-        print("-------------------------------------------------------------")
         print(f"Here are some {selected_genre.upper()} books in {selected_lang.upper()}:")
-        print("-------------------------------------------------------------")
-        print("\n")
         print("-------------------------------------------------------------")
 
         count = 1
@@ -196,13 +199,14 @@ def main():
                 found = True
                 
         if not found:
-            print("Oh nooo, sorry no books found for this combination.")
+            print("\n")
+            print("Oh nooo!! sorry no books found for this combination.")
 
         print("\n")
         ans = input("Okay, is this what you're looking for? (yes/no): ").strip().lower()
         if ans in ["yes", "y"]:
             print("\n")
-            print("Thank you for choosing Kobo! Enjoy your reading")
+            print("Thank youuu for choosing Kobo! Enjoy your reading")
             print("\n")
             break
 
