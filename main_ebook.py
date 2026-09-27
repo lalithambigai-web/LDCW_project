@@ -1,4 +1,4 @@
-
+import textwrap
 books = [
     {"title": "Die Hard: Year One", "author": "Howard Chaykin", "genre": "Action", "lang": "English", "rating": "4.2/5", "description": "A graphic novel prequel to the iconic movie, detailing John McClane's early days as a rookie beat cop in New York City during the bicentennial summer of 1976."},
     {"title": "The Terminal List", "author": "Jack Carr", "genre": "Action", "lang": "English", "rating": "4.7/5", "description": "A high stakes military thriller following Navy SEAL James Reece as he seeks revenge against a high level government conspiracy after his entire team is ambushed and killed."},
@@ -257,17 +257,26 @@ def main():
                 if 0 <= selected_no < len(books):
                     selected_book = books[selected_no]
 
-                    print("\n====================================")
-                    print(f"Title   :{selected_book['title']}")
-                    print(f"Author  :{selected_book['author']}")
-                    print("====================================\n")
+                    
+                    print("\n==================================================================")
+                    print(f"Title       :{selected_book['title']}")
+                    print(f"Author      :{selected_book['author']}")
+                    print(f"Genre       :{selected_book['genre']}")
+                    print(f"Rating      :{selected_book['rating']}")
+                   
+                    raw_description = selected_book['description'].strip()
+                    prefix = "Description :"
+                    wrapped_description = textwrap.fill(raw_description, width=60, initial_indent=prefix, subsequent_indent=" " * len(prefix))
+                    print(wrapped_description)
+                    print("==================================================================\n")
+                    
                     input("\nPress Enter to return to the main menu...")
                 else:
                     print("Invalid book number selection.")
                     input("\nPress Enter to return to the main menu...")
 
         elif choice == "3":
-            print("Thank You for choosing Kobo!!!")
+            print("Thank You for Choosing Kobo!!!")
             break
 
 if __name__ == "__main__":
